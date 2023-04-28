@@ -1,7 +1,7 @@
 {
   "version": 2,
   "env": {
-    "MONGO_URI": "@mongo_uri"
+    "MONGO_URI": "mongodb+srv://ilya:ilya261723@nest.1llxjxh.mongodb.net/?retryWrites=true&w=majority"
   },
   "builds": [
     {

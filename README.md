@@ -71,3 +71,8 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](LICENSE).
+
+
+## Deploy 
+npm i @vendia/serverless-express aws-lambda
+npm i -D @types/aws-lambda serverless-offline

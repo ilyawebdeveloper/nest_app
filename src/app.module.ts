@@ -11,9 +11,9 @@ import { ConfigModule } from '@nestjs/config';
     DataModule,
     ProductsModule,
     ConfigModule.forRoot({
-      envFilePath: ['.env.development.local'],
+      envFilePath: ['.env'],
     }),
-    MongooseModule.forRoot(process.env.MONGO_URI, { useFindAndModify: false }),
+    MongooseModule.forRoot(process.env.MONGO_URI),
   ],
   controllers: [AppController],
   providers: [AppService],

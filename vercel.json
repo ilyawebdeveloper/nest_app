@@ -1,7 +1,11 @@
 {
   "version": 2,
   "env": {
+<<<<<<< HEAD
     "MONGO_URI": "@mongo_uri"
+=======
+    "MONGO_URI": "mongodb+srv://ilya:ilya261723@nest.1llxjxh.mongodb.net/?retryWrites=true&w=majority"
+>>>>>>> 45caa52e62a604a86da5cdab64ef8667ff7cd23c
   },
   "builds": [
     {

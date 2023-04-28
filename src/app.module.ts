@@ -4,14 +4,16 @@ import { AppService } from './app.service';
 import { ProductsModule } from './products/products.module';
 import { MongooseModule } from '@nestjs/mongoose';
 import { DataModule } from './data/data.module';
+import { ConfigModule } from '@nestjs/config';
 
 @Module({
   imports: [
     DataModule,
     ProductsModule,
-    MongooseModule.forRoot(
-      'mongodb+srv://ilya:ilya261723@nest.1llxjxh.mongodb.net/?retryWrites=true&w=majority',
-    ),
+    ConfigModule.forRoot({
+      envFilePath: ['.env.development.local'],
+    }),
+    MongooseModule.forRoot(process.env.MONGO_URI, { useFindAndModify: false }),
   ],
   controllers: [AppController],
   providers: [AppService],
